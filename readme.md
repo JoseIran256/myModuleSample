@@ -61,29 +61,28 @@ Após criar o ```package.json```, adicione a linha abaixo que configura os módu
  
 ### Criando o Javascript do módulo
 
-Agora vamos criar nosso arquivo ```index.js``` que exporta a função ```fakename```:
+Agora vamos criar nosso arquivo ```index.js``` que exporta o objeto ```lib```:
 
 ~~~js
-export default function fakename() {
-    const first = ['Ana','Bia','João','Julio']
-    const last = ['Alface','Melão','Goiaba','Cenoura']
-    let firstName = first[parseInt(Math.random()*4)]
-    let lastName = last[parseInt(Math.random()*4)]
-    return firstName+" "+lastName
-}
+import lib from "./mylib.js"
+
+// String contendo SVG criado
+export default lib
 ~~~
 
 A função ```fakename``` sorteia uma das strings dos vetores ```first``` e ```last``` devolvendo a junção destas duas strings.
 
 
-#### Testando a função ```fakename```
+#### Testando sua lib ```lib```
 
-Crie um arquivo ```teste.js``` que importa a função ```fakename``` e imprime seu resultado:
+Crie um arquivo ```teste.js``` que importa o objeto ```lib``` e imprime seu resultado:
 
 ~~~js
-import fakename from "./index.js";
+import lib from "./mylib.js"
 
-console.log(fakename());
+// String contendo SVG criado
+let svgText = lib.getSVG("ana123")
+console.log(svgText);
 ~~~
 
 Execute seu teste:
@@ -110,7 +109,7 @@ Se tudo correr bem, seu módulo estará publicado. Você poderá verificar no si
 Crie um projeto novo. Inicialize seu projeto com ```npm init -y```, altere o ```package.json``` adicionando a linha ```"type": "module"```, e tente instalar seu módulo (pacote):
 
 ~~~shell
-npm install @my-username/fakename
+npm install @my-username/mylib
 ~~~ 
 
 trocando ```my-username``` com seu nome de usuário.
@@ -118,9 +117,11 @@ trocando ```my-username``` com seu nome de usuário.
 Crie e execute um javascript com o trecho:
 
 ~~~js
-import fakename from "@my-username/fakename";
+import lib from "@my-username/mylib";
 
-console.log(fakename());
+// String contendo SVG criado
+let svgText = lib.getSVG("ana123")
+console.log(svgText);
 ~~~
 
 
