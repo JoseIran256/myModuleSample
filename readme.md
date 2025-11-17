@@ -16,7 +16,7 @@ Para que seja possível publicar nosso módulo/pacote, precisamos criar uma cont
 
 ### Criando o projeto do nosso módulo
 
-1. Criar um projeto para nosso módulo chamado, por exemplo, "fakename". 
+1. Criar um projeto para nosso módulo chamado, por exemplo, "mylib". 
     **IMPORTANTE:** Será necessário que seu projeto esteja sincronizado com um repositório do seu **github**. Uma forma simples de fazer isso é criar o repositório e depois cloná-lo em sua máquina. 
 2. Abrir a pasta do projeto no VSCode.
 3. Abrir terminal do VSCODE (verifique se o caminho no terminal está correto)
