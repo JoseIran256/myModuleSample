@@ -1,4 +1,5 @@
 import lib from "./mylib.js"
 
 // String contendo SVG criado
-export default lib
+let svgText = lib.getSVG("ana123")
+console.log(svgText);
