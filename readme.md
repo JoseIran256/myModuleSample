@@ -49,7 +49,7 @@ Para inicializarmos nosso projeto usando seu nome de usuário como escopo do pro
 npm init --scope=@my-username
 ~~~ 
 
-trocando ```my-username``` com seu nome de usuário e depois responda aos prompts para gerar um arquivo ```package.json``` informando o nome do projeto como ```fakename```. Agora quando publicarmos, nosso módulo poderá ser encontrado por meio do nome: ```@my-username/fakename```
+trocando ```my-username``` com seu nome de usuário e depois responda aos prompts para gerar um arquivo ```package.json``` informando o nome do projeto como ```mylib```. Agora quando publicarmos, nosso módulo poderá ser encontrado por meio do nome: ```@my-username/mylib```
 
 ##### **Lembre-se**: 
 Após criar o ```package.json```, adicione a linha abaixo que configura os módulos a usar import/export via ESM.
