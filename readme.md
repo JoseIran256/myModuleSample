@@ -8,7 +8,7 @@ No **Node.js**, um módulo é um conjunto de funções e objetos Javascript que 
 
 Os módulos permitem reutilizar funcionalidades em diferentes programas, facilitando o desenvolvimento de aplicativos modulares e escaláveis. Além disso, possibilitam o compartilhamento de código com outros desenvolvedores. Criar módulos que exportam funções e dados úteis é uma habilidade essencial para qualquer desenvolvedor **Node.js**, pois todos os pacotes disponíveis no **npm** são, na verdade, módulos organizados e compartilhados.
 
-Na 1a parte deste checkpoint, vamos aprender a criar um módulo **Node.js** usando, apenas uma ilustração, o exemplo de uma versão simplificada do gerador de nomes *fake* que desenvolvemos em aula. A ideia é que outros desenvolvedores possam utilizar em seus projetos nossa *'super função'* de geração de nomes *fakes*. 
+Vamos aprender a criar um módulo **Node.js** usando, apenas uma ilustração, o exemplo de uma versão simplificada da biblioteca que desenvolvemos para o projeto. A ideia é que outros desenvolvedores possam utilizar em seus projetos nosso *'super modulo'* de geração de SVGs. 
 
 
 ### Criando uma conta no NPM
@@ -39,7 +39,7 @@ npm whoami
 
 ### Inicializando o projeto
 **IMPORTANTE**
-> Como diversos alunos estarão seguindo os mesmos passos deste checkpoint, será muito provável que o nome do módulo **fakename** já tenha sido criado e o npm não deixará que você dê este nome para seu módulo. Assim, será melhor criar o módulo contendo o nome do seu usuário do npm. Isto é o que chamamos de nomes com escopo (namespace para pacotes).
+> Como diversos alunos estarão seguindo os mesmos passos deste checkpoint, será muito provável que o nome do módulo **mylib** já tenha sido criado e o npm não deixará que você dê este nome para seu módulo. Assim, será melhor criar o módulo contendo o nome do seu usuário do npm. Isto é o que chamamos de nomes com escopo (namespace para pacotes).
 
 > Um escopo permite que você crie um pacote com o mesmo nome de um pacote criado por outro usuário ou organização sem conflito.
 
