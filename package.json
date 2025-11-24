@@ -1,5 +1,5 @@
 {
-  "name": "moduloexemplo01",
+  "name": "@joseiran/svguid-a3",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@joseiran/svguid-a3": "^1.0.0",
     "@svgdotjs/svg.js": "^3.2.5",
     "jsdom": "^27.1.0",
     "svgdom": "^0.1.22"
